@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: darkgray;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .box {
+        width: 30%;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 45%;
+    }
+    .box:last-child {
+        width: 95%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .box {
+        width: 95%;
+    }
+}
